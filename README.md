@@ -5,12 +5,6 @@
 Ingenieria de Sistemas | Modelos y Simulacion de Sistemas I<br>
 </p>
 
-
-
- 
-
-
-
 ## Dataset
 https://www.kaggle.com/competitions/nyc-taxi-trip-duration
 
