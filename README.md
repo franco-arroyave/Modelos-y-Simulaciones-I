@@ -19,8 +19,8 @@ Cada notebook está dispuesto para que pueda ser ejecutado sin necesidad de hace
 Se recomienda ejecutarlo desde Colab de Google o un ambiente Linux, esto debido a que se utilizan comandos de terminal Linux para el manejo de archivos.
 
 ### Entregables
-* 1. [Cleaning.ipynb](https://colab.research.google.com/drive/1FO0axUCSU46ABWc1ovqmEV99VVX-47Nl)
-* 2. [Training and testing.ipynb](https://colab.research.google.com/drive/1RTpJFyidsf1eorbYX0gkjl3ObW6Hc9mt?usp=sharing)
+*  [1. Cleaning.ipynb](https://colab.research.google.com/drive/1FO0axUCSU46ABWc1ovqmEV99VVX-47Nl)
+*  [2. Training and testing.ipynb](https://colab.research.google.com/drive/1RTpJFyidsf1eorbYX0gkjl3ObW6Hc9mt?usp=sharing)
 
 
 <p align="center">
