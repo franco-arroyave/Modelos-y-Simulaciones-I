@@ -1,0 +1,25 @@
+# Utilizar una imagen base de Python
+FROM python:3.9-slim
+
+# Establecer el directorio de trabajo
+WORKDIR /app
+
+# Copiar los archivos al contenedor
+COPY requirements.txt ./
+COPY predict.py train.py tools.py ./
+
+# Instalar las dependencias
+#RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Comandos para ejecutar los scripts
+# Para predecir: 
+# Windos power shell:
+# docker run --rm -v ${pwd}/models:/app/models -v ${pwd}/data:/app/data my_model_container python predict.py --data_file train.csv --model_file model.cbm
+# Linux:
+# docker run --rm -v $(pwd)/models:/app/models -v $(pwd)/data:/app/data my_model_container python predict.py --data_file train.csv --model_file model.cbm
+# Para entrenar:
+# Windos power shell:
+# docker run --rm -v ${pwd}/models:/app/models -v ${pwd}/data:/app/data my_model_container python train.py --data_file train.csv
+# Linux:
+# docker run --rm -v $(pwd)/models:/app/models -v $(pwd)/data:/app/data my_model_container python train.py --data_file train.csv
