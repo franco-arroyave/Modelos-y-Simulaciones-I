@@ -1,0 +1,22 @@
+# Utilizar una imagen base de Python
+FROM python:3.9-slim
+
+# Establecer el directorio de trabajo
+WORKDIR /app
+
+# Copiar los archivos al contenedor
+COPY requirements.txt ./
+
+# Instalar las dependencias
+#RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Exponer el puerto
+EXPOSE 8000
+
+# Comandos para ejecutar el servidor web
+# Windos power shell:
+#docker run --rm -v ${pwd}/app:/app/app -p 8000:8000 my_model_container uvicorn app.app:app --host 0.0.0.0 --port 8000
+# Linux:
+#docker run --rm -v $(pwd)/app:/app/app -p 8000:8000 my_model_container uvicorn app.app:app --host 0.0.0.0 --port 8000
+
